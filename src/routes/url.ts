@@ -2,7 +2,8 @@ import { Request, Response } from 'express';
 import { Url } from "../models/url";
 const router = require("express").Router();
 
-const BASE_URL = "http://localhost:3000";
+// const BASE_URL = "http://localhost:3000"; // Use this for local
+const BASE_URL = "https://shortenurl-dyht.onrender.com";
 
 // Create shortened URL
 router.post("/shorten", async (req: Request, res: Response) => {
